@@ -1,0 +1,113 @@
+<form name="myForm" action="/create" method="post">
+    <div class="grid_information">
+        <div>
+            <p>ค่า BMI</p>
+            <input type="text" name="BMI" id="BMI" placeholder="กรุณากรอกค่า BMI เป็นตัวเลข..." pattern="^\d+(\.\d+)?$" title="กรุณากรอกเป็นตัวเลขจำนวนเต็มหรือทศนิยม" required><br>
+
+
+            <p>สูบบุหรี่หรือไม่ ?</p>
+            <div class="radio-group">
+                <input type="radio" id="Smoking" name="Smoking" value="1">
+                <label for="age1">ใช่</label>
+                <input type="radio" id="Smoking" name="Smoking" value="0">
+                <label for="age2">ไม่ใช่</label>
+            </div>
+
+            <p>มีปัญหาทางสุขภาพทางกายหรือบาดเจ็บจำนวนกี่วัน ? (ถ้าหากไม่มีตอบ 0)</p>
+            <input type="text" name="PhysicalHealth" id="PhysicalHealth" pattern="[0-9]*"  title="กรุณากรอกเป็นตัวเลขจำนวนเต็ม" placeholder="กรุณากรอกจำนวนวันเป็นตัวเลขจำนวนเต็ม..." required>
+
+            <p>มีปัญหาทางสุขภาพจิตจำนวนกี่วัน ? (ถ้าหากไม่มีตอบ 0)</p>
+            <input type="text" name="MentalHealth" id="MentalHealth" pattern="[0-9]*" title="กรุณากรอกเป็นตัวเลขจำนวนเต็ม" placeholder="กรุณากรอกจำนวนวันเป็นตัวเลขจำนวนเต็ม..."required>
+
+            <p>มีการเดินที่แตกต่างจากคนปกติทั่วไปหรือไม่ ?</p>
+            <div class="radio-group">
+                <input type="radio" id="DiffWalking1" name="DiffWalking" value="1">
+                <label for="DiffWalking1">ใช่</label>
+                <input type="radio" id="DiffWalking2" name="DiffWalking" value="0">
+                <label for="DiffWalking2">ไม่ใช่</label>
+            </div>
+        
+
+            <p>เพศ</p>
+            <div class="radio-group">
+                <input type="radio" id="Sex" name="Sex" value="1">
+                <label for="Sex1">ชาย</label>
+                <input type="radio" id="Sex" name="Sex" value="0">
+                <label for="Sex2">หญิง</label>
+            </div>     
+
+            <p>ช่วงอายุ</p>
+            <select style ="font-size: 14px" class= "slide" name="AgeCategory" id="AgeCategory">
+                <option value="0">18-24</option>
+                <option value="1">25-29</option>
+                <option value="2">30-34</option>
+                <option value="3">35-39</option>
+                <option value="4">40-44</option>
+                <option value="5">45-49</option>
+                <option value="6">50-54</option>
+                <option value="7">55-59</option>
+                <option value="8">60-64</option>
+                <option value="9">65-69</option>
+                <option value="10">70-74</option>
+                <option value="11">75-79</option>
+                <option value="12">80 หรือมากกว่า</option>
+            </select>
+        </div>
+
+        <div>
+            <p>เป็นโรคเบาหวานหรือไม่ ?</p>
+            <div class="radio-group">
+                <input type="radio" id="Diabetic" name="Diabetic" value="1">
+                <label for="Diabetic1">ใช่</label><br>
+                <input type="radio" id="Diabetic" name="Diabetic" value="0">
+                <label for="Diabetic2">ไม่ใช่</label> 
+            </div>
+            
+            <br> 
+
+            <p>มีกิจกรรมออกกำลังกายหรือไม่ ?</p>
+            <div class="radio-group">
+                <input type="radio" id="PhysicalActivity" name="PhysicalActivity" value="1">
+                <label for="PhysicalActivity1">ใช่</label><br>
+                <input type="radio" id="PhysicalActivity" name="PhysicalActivity" value="0">
+                <label for="PhysicalActivity2">ไม่ใช่</label><br><br>
+            </div>
+
+            <p>สุขภาพโดยรวม :</p>
+            <select class= "slide" style ="font-size: 14px" name="GenHealth" id="GenHealth">
+                <option value="0">ดีเยี่ยม</option>
+                <option value="4">ดีมากๆ</option>
+                <option value="2">ดี</option>
+                <option value="1">พอใช้</option>
+                <option value="3">แย่</option>
+            </select>
+            
+
+            <p>ชั่วโมงนอนหลับ (ชั่วโมง):</p>
+            <input type="number" name="SleepTime" id="SleepTime"  value="8" pattern="[0-9]*" required>&nbsp;ชั่วโมง
+
+            <p>เป็นโรคหอบหืดหรือไม่ ?</p>
+            <div class="radio-group">
+                <input type="radio" id="Asthma " name="Asthma" value="1">
+                <label for="Asthma1">ใช่</label><br>
+                <input type="radio" id="Asthma " name="Asthma" value="0">
+                <label for="Asthma2">ไม่ใช่</label>
+            </div>
+            <br>  
+
+            <p>เป็นมะเร็งผิวหนังหรือไม่ ?</p>
+            <div class="radio-group">
+                <input type="radio" id="age1" name="SkinCancer" value="1">
+                <label for="SkinCancer1">ใช่</label><br>
+                <input type="radio" id="age2" name="SkinCancer" value="0">
+                <label for="SkinCancer2">ไม่ใช่</label> 
+            </div>
+
+            <br><br><br><br>
+
+            <button type="submit" style="position:absolute; right: 300px; margin-top:-50px; width: 200px" class="button-62">คลิกเพื่อทำนายโอกาส</button>
+        </div> 
+    </div>
+
+   
+</form>

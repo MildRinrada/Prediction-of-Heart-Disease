@@ -1,0 +1,15 @@
+<div class="percent">
+    <div>{{result}}</div>
+</div>
+<!--เงื่อนไข โดยใช้ percentage ขึ้นข้อความ-->
+<div class="textOutput">
+    {% if percentage >= 75.0 %}
+        <p>มีโอกาสเป็นสูงมาก</p>
+    {% elif percentage >= 50.0 %}
+        <p>มีโอกาสเป็นปานกลาง</p> 
+    {% elif percentage >= 25.0 %}
+        <p>มีโอกาสเป็นนิดหน่อย</p>  
+    {% else %}
+        <p class="emoji">มีโอกาสเป็นต่ำมาก</p> 
+    {% endif %}
+</div>
