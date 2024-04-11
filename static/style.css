@@ -1,0 +1,193 @@
+body {
+    background-image: linear-gradient(to bottom, #fccac9, #c3c7c8);
+}
+
+option {text-decoration : none; color : #2d2f31; }
+
+input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #5e4242;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-color: transparent;
+    position: relative;
+    font-family: 'Sukhumvit Set';
+    src: URL('SukhumvitSet-SemiBold.ttf') format('truetype');
+}
+
+label{
+    font-family: 'Sukhumvit Set';
+    src: URL('SukhumvitSet-SemiBold.ttf') format('truetype');
+}
+
+input[type="radio"]:checked::before {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+    background-color: #ca8489;
+    border-radius: 50%;
+    position: absolute;
+    top: 45%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+    animation: appear 0.8s;
+}
+
+
+.slide {
+  clear:both;
+  width: 20%;
+  height:30px;
+  overflow: hidden;
+  text-align: center;
+  transition: height .4s ease;
+  background-color: #e7b6b7;
+  border-radius: 20px;
+  color: #6d4447;
+  font-family: 'Sukhumvit Set';
+  src: URL('SukhumvitSet-SemiBold.ttf') format('truetype');
+}
+
+.slide li {padding : 30px;}
+
+#touch {position: absolute; opacity: 0; height: 0px;}    
+
+#touch:checked + .slide {height: 300px; color: #6d4447;} 
+
+.container {
+    padding: 2em; /* ปรับขนาด padding ให้เล็กลง */
+    background-color: #f9f1ef; /* กำหนดสีพื้นหลังเป็นสีขาว */
+    width: 80%; /* กำหนดความกว้างของ container */
+    margin: 0 auto; /* จัดให้ container อยู่ตรงกลางของหน้าจอ */
+    border-radius: 10px; /* ปรับขอบให้โค้ง */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* เพิ่มเงา */
+}
+
+.radio-group {
+    display: flex;
+    align-items: center;
+  }
+  
+  .radio-group input[type="radio"] {
+    margin-right: 5px;
+  }
+
+p{
+    color: #4d4232;
+    font-family: 'Sukhumvit Set';
+    src: URL('SukhumvitSet-SemiBold.ttf') format('truetype');
+}
+
+.font_header {
+    text-align: center;
+    font-size: 50px;
+    position: absolute;
+    right: 500px;
+    margin-right: -50px;
+    top: 20px;
+    font-weight: bold;
+    -webkit-text-stroke: 1.3px #6d4447;
+    -webkit-text-fill-color: white;
+    font-family: 'Sukhumvit Set';
+    src: URL('SukhumvitSet-Bold.ttf') format('truetype');
+    font-weight: bold;
+} 
+
+.grid_information{
+    display: grid; 
+    align-items: start; 
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: -100px;
+  }    
+
+input[type="text"] {
+    border-radius: 30px;
+    padding: 10px 20px;
+    width: 400px;
+    height: 33px;
+    font-size: 14px;
+    font-family: 'Ubuntu', sans-serif;
+    box-sizing: border-box;
+    background-color: #fef6dc;
+    font-family: 'Sukhumvit Set';
+    src: URL('SukhumvitSet-SemiBold.ttf') format('truetype');
+}
+
+.percent {
+    font-size: 70px;
+    color: #f9bbd0;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    transition: background-color 2s ease-in-out 5s;
+    font-family: 'Sukhumvit Set';
+    src: URL('SukhumvitSet-SemiBold.ttf') format('truetype');
+}
+
+.textOutput {
+    position: absolute;
+    top: 380px;
+    right: 680px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    scale: 1.5;
+    font-family: 'Sukhumvit Set';
+    src: URL('SukhumvitSet-SemiBold.ttf') format('truetype');
+}
+
+.textOutput p {
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.textOutputbox {
+    background-color: White;
+    padding: 30px;
+    width: 24%; 
+    height: 1%;
+    position: absolute;
+    top: 380px;
+    right: 200px;
+    border-radius: 20px;
+    font-family: 'Sukhumvit Set';
+    src: URL('SukhumvitSet-SemiBold.ttf') format('truetype');
+}
+
+/* CSS */
+.button-62 {
+  background: linear-gradient(to bottom right, #edaeae, #f6a2c4);
+  border: 0;
+  border-radius: 12px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2.5;
+  outline: transparent;
+  padding: 0 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  font-family: 'Sukhumvit Set';
+  src: URL('SukhumvitSet-SemiBold.ttf') format('truetype');
+}
+
+.button-62:not([disabled]):focus {
+  box-shadow: 0 0 .25rem rgba(168, 179, 243, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+.button-62:not([disabled]):hover {
+  box-shadow: 0 0 .25rem rgba(168, 179, 243, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
