@@ -1,0 +1,17 @@
+<script>
+    function goBack() {
+    window.history.back();
+  }
+
+    // หากมีการเปลี่ยนค่าใน input
+    document.getElementById('SleepTime').addEventListener('change', function() {
+        // ดึงค่าที่ผู้ใช้ป้อน
+        var inputValue = parseInt(this.value);
+        
+        // ตรวจสอบว่าค่าที่ป้อนมาเป็นเลขลบหรือไม่
+        if (inputValue < 0) {
+            // หากเป็นเลขลบ ให้ตั้งค่าเป็น 0
+            this.value = 0;
+        }
+    });  
+</script>
