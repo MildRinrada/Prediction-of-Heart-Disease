@@ -1,0 +1,14 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+<div class="font_header">การทำนายโอกาสเป็นโรคหัวใจ</div>
+<br><br><br><br><br>
+
+<div class="container">
+    <button class="button-62" style = "float: left;" onclick="goBack()">< ย้อนกลับ</button>
+    <form>
+        <br><br><br><br><br><br><br><br>
+        {% include 'components/output.html' %}
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </form>
+</div>
+{% include 'components/script.html' %}
